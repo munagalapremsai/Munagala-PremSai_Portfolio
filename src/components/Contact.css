@@ -1,0 +1,116 @@
+.contact {
+  background: var(--bg-elevated);
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact__cta-card {
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: var(--card-gradient);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__cta-card::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: -120px;
+  right: -80px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  pointer-events: none;
+}
+
+.contact__cta-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact__cta-card p {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact__cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  position: relative;
+  z-index: 1;
+}
+
+.contact__methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact__method {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.contact__method:hover {
+  border-color: rgba(6, 182, 212, 0.35);
+  transform: translateX(4px);
+  box-shadow: var(--shadow);
+}
+
+.contact__method-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.contact__method-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contact__method-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-subtle);
+  margin-bottom: 0.15rem;
+}
+
+.contact__method-value {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

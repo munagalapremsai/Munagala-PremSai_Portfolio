@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --accent: #06b6d4;
+  --accent-2: #10b981;
+  --accent-glow: rgba(6, 182, 212, 0.35);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --section-pad: clamp(4rem, 8vw, 7rem);
+  --container: min(1140px, calc(100% - 2.5rem));
+}
+
+[data-theme='dark'] {
+  --bg: #060a12;
+  --bg-elevated: #0c1220;
+  --surface: #111827;
+  --surface-hover: #1a2332;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --nav-bg: rgba(6, 10, 18, 0.72);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --card-gradient: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  --hero-glow: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(6, 182, 212, 0.18), transparent 70%);
+  --cursor-ring: rgba(6, 182, 212, 0.5);
+  --cursor-dot: #06b6d4;
+}
+
+[data-theme='light'] {
+  --bg: #f4f7fb;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #f8fafc;
+  --border: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.14);
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --nav-bg: rgba(244, 247, 251, 0.82);
+  --shadow: 0 24px 80px rgba(15, 23, 42, 0.1);
+  --card-gradient: linear-gradient(145deg, #ffffff, #f8fafc);
+  --hero-glow: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(6, 182, 212, 0.12), transparent 70%);
+  --cursor-ring: rgba(6, 182, 212, 0.35);
+  --cursor-dot: #0891b2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--transition), color var(--transition);
+}
+
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button {
+  cursor: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background: rgba(6, 182, 212, 0.25);
+  color: var(--text);
+}
+
+.container {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: var(--section-pad);
+  position: relative;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  box-shadow: 0 8px 32px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 40px var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--border-strong);
+  color: var(--text);
+  background: var(--surface);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  body.custom-cursor-active,
+  body.custom-cursor-active a,
+  body.custom-cursor-active button {
+    cursor: auto;
+  }
+}

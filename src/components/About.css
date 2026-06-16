@@ -1,0 +1,130 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+}
+
+.about__card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--card-gradient);
+  box-shadow: var(--shadow);
+}
+
+.about__text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about__highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about__highlight {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.about__highlight-icon {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding-top: 0.2rem;
+}
+
+.about__highlight h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.about__highlight p {
+  font-size: 0.92rem;
+  color: var(--text-subtle);
+  line-height: 1.6;
+}
+
+.about__card--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about__info-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.about__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: left;
+}
+
+.about__info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.about__info-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about__info-list span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-subtle);
+}
+
+.about__info-list strong {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.about__info-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.about__info-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+
+.about__info-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(6, 182, 212, 0.06);
+}
+
+@media (max-width: 900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+}
