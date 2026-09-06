@@ -27,7 +27,7 @@ const contactMethods = [
   },
   {
     label: 'LinkedIn',
-    value: 'Munagala Prem Sai',
+    value: 'Prem Sai Munagala',
     href: personalInfo.linkedin,
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor">
@@ -63,8 +63,9 @@ export default function Contact() {
           <div className="contact__cta-card">
             <h3>Ready to hire or collaborate?</h3>
             <p>
-              I&apos;m actively seeking opportunities where I can contribute my skills in
-              Python development, API design, and cybersecurity. Let&apos;s build something secure together.
+              I&apos;m Actively seeking opportunities to engineer digital infrastructures through advanced Ethical Hacking, VAPT, and automated threat defense.
+              <br /><br />
+              Specializing in custom Python scripting and security automation to accelerate vulnerability discovery, optimize threat response, and fortify scalable API architectures.
             </p>
             <div className="contact__cta-actions">
               <a href={`mailto:${personalInfo.email}`} className="btn btn-primary">

@@ -3,7 +3,7 @@ export const personalInfo = {
   shortName: 'Prem Sai',
   title: 'Cyber Security Analyst & Python Developer',
   tagline:
-    'Defending digital assets through advanced VAPT, Systems defense, and Custom Python Security automation.',
+    'Defending digital assets through advanced Ethical Hacking and VAPT, Systems defense, and Custom Python Security automation.',
   email: 'munagalapremsai@gmail.com',
   phone: '+91 74168 88675',
   linkedin: 'https://www.linkedin.com/in/prem-sai-munagala-a0257b414/',
