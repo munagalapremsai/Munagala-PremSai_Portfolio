@@ -1,19 +1,19 @@
 export const personalInfo = {
   name: 'Prem Sai Munagala',
   shortName: 'Prem Sai',
-  title: 'Full Stack Python Developer & Security Analyst',
+  title: 'Cyber Security Analyst & Python Developer',
   tagline:
-    'Architecting secure, high-performance web applications and defending systems through advanced penetration testing & threat analysis.',
+    'Defending digital assets through advanced VAPT, Systems defense, and Custom Python Security automation.',
   email: 'munagalapremsai@gmail.com',
   phone: '+91 74168 88675',
-  linkedin: 'https://linkedin.com/in/Munagala-prem-sai',
-  github: 'https://github.com/mpremsai12345',
+  linkedin: 'https://www.linkedin.com/in/prem-sai-munagala-a0257b414/',
+  github: 'https://github.com/munagalapremsai',
   location: 'Vadodara, Gujarat, India',
   resumeUrl: '/resume.pdf',
   status: '4th Year B.Tech Student · Open to Opportunities',
 }
 
-export const aboutText = `I am a Full Stack Python Developer and Cybersecurity Analyst currently pursuing my B.Tech in Cyber Security. I specialize in building robust backends with Python, Flask, FastAPI, and Django, alongside analyzing and hardening software architectures. With hands-on experience in threat modeling, penetration testing, and digital forensics, I build secure-by-design applications that protect data integrity while maintaining top-tier performance.`
+export const aboutText = `I am a Cyber Security Analyst & Python Developer skilled in Ethical Hacking, VAPT, systems defense, and threat analysis. I specialize in building custom Python automation tools to identify vulnerabilities, streamline security workflows, and proactively secure digital assets against modern threats.`
 
 export const education = [
   {

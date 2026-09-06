@@ -37,7 +37,7 @@ const contactMethods = [
   },
   {
     label: 'GitHub',
-    value: 'mpremsai12345',
+    value: 'munagalapremsai',
     href: personalInfo.github,
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor">
