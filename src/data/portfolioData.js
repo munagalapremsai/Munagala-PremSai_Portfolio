@@ -21,7 +21,7 @@ export const education = [
     institution: 'Parul Institute of Engineering and Technology',
     location: 'Vadodara, Gujarat',
     period: 'July 2023 – June 2027',
-    score: 'CGPA: 6.45 / 10.0',
+    score: 'CGPA: 6.72 / 10.0',
     highlight: 'Currently in 4th Year',
     description:
       'Focused engineering curriculum covering advanced cybersecurity methodologies, cryptography, network security, web application security, and secure software development.',
