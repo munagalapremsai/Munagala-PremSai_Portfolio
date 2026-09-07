@@ -9,7 +9,7 @@ export const personalInfo = {
   linkedin: 'https://www.linkedin.com/in/prem-sai-munagala-a0257b414/',
   github: 'https://github.com/munagalapremsai',
   location: 'Vadodara, Gujarat, India',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/Prem_Sai_Munagala_Resume.pdf',
   status: '4th Year B.Tech Student · Open to Opportunities',
 }
 
